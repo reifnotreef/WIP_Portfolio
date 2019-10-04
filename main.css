@@ -120,7 +120,21 @@ a {
   margin-bottom: 2rem;
 }
 
-/* media query @1080PX */
+/* media query small screens */
+
+@media screen and (max-width: 1023px) {
+  .project-container {
+    flex: 0 0 40%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .project-container {
+    flex: 0 0 80%;
+  }
+}
+
+/* media query @1024PX */
 
 @media screen and (min-width: 1024px) {
   * {
