@@ -55,15 +55,13 @@
 
 .project-container {
   margin-top: 1rem;
-  margin-left: 2rem;
-}
-
-.project-container * {
-  width: 250px;
+  width: 10rem;
+  margin: 1rem;
+  background-color: green;
 }
 
 .project-image {
-  width: 12rem;
+  width: 100%;
 }
 
 #footer-container {
@@ -86,7 +84,7 @@
 
 /* media query @1080PX */
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1024px) {
   * {
     font-size: 16px;
   }
@@ -118,7 +116,7 @@
   .project-container {
     /* width: 20vw;
     max-width: 15rem; */
-    flex: 0 0 25%;
+    flex: 0 0 30%;
   }
   #footer-container {
     grid-area: 5 / 1 / 6 / 2;
