@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 10px;
 }
 
 #main-container {
@@ -17,6 +18,22 @@
 #header-container {
   grid-area: 1 / 1 / 2 / 2;
   background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#profile-img-container {}
+
+#profile-img {
+  border-radius: 50%;
+  width: 20rem;
+}
+
+#profile-bio-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 #projects-container {
@@ -27,6 +44,18 @@
 #footer-container {
   grid-area: 3 / 1 / 4 / 2;
   background-color: green;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#footer-container p {
+  text-align: center;
+}
+
+#contact-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* media query @1080PX */
@@ -42,10 +71,23 @@
   #header-container {
     grid-area: 1 / 1 / 3 / 2;
   }
+  #profile-bio-container {
+    width: 100%;
+    margin-left: 4rem;
+    margin-top: 2rem;
+  }
   #projects-container {
     grid-area: 1 / 2 / 6 / 5;
   }
   #footer-container {
     grid-area: 4 / 1 / 6 / 2;
+  }
+  #contact-container {
+    width: 100%;
+    margin-left: 4rem;
+    margin-top: 2rem;
+  }
+  #contact-container p {
+    text-align: left;
   }
 }
