@@ -50,13 +50,16 @@
   flex-wrap: wrap;
   padding: 2rem;
   max-width: 100vw;
-  justify-content: space-around;
-  align-content: space-around;
+  justify-content: center;
 }
 
 .project-container {
   margin-top: 1rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
+}
+
+.project-container * {
+  width: 250px;
 }
 
 .project-image {
@@ -111,14 +114,11 @@
   #projects-container {
     grid-area: 1 / 2 / 6 / 5;
     flex-wrap: wrap;
-    /* justify-content: flex-start; */
-    align-content: flex-start;
-    flex-basis: 50%;
   }
   .project-container {
     /* width: 20vw;
     max-width: 15rem; */
-    flex: 1 0 25%;
+    flex: 0 0 25%;
   }
   #footer-container {
     grid-area: 5 / 1 / 6 / 2;
