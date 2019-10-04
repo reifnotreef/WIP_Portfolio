@@ -47,6 +47,10 @@
   text-align: center;
 }
 
+#profile-bio {
+  font-size: 1.5rem;
+}
+
 #projects-container {
   grid-area: 2 / 1 / 3 / 2;
   background-color: #2f363d;
@@ -139,10 +143,6 @@ a {
   }
   #profile-bio-container {
     width: 100%;
-    margin-left: 4rem;
-  }
-  #profile-bio-container p {
-    text-align: left;
   }
   #projects-container {
     grid-area: 1 / 2 / 6 / 5;
