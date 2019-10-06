@@ -139,6 +139,19 @@ a {
   flex-direction: column;
   max-width: 100vw;
   color: #fff;
+  padding: 1rem;
+}
+
+#about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#about-me-container p {
+  margin: 0.25rem;
+  text-align: center;
 }
 
 #contact-header {
@@ -159,6 +172,16 @@ a {
 @media screen and (min-width: 720px) {
   .project-container {
     flex: 0 0 40%;
+  }
+  #top-nav {
+    flex-direction: row;
+  }
+  #top-nav a {
+    margin: 0.25rem;
+  }
+  #about-me-container p {
+    margin: 0.5rem;
+    /* text-align: left; */
   }
 }
 
@@ -205,11 +228,20 @@ a {
     flex: 0 0 30%;
   }
   #footer-container {
-    grid-area: 5 / 1 / 6 / 2;
+    grid-area: 4 / 1 / 6 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  #about-me-container {
+    font-size: 0.8rem;
+  }
+  #about-me-container p {
+    text-align: left;
   }
   #contact-container {
     width: 100%;
-    margin-left: 4rem;
+    margin-left: 1.2rem;
     margin-top: 2rem;
   }
   #contact-container p {
