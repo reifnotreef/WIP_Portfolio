@@ -149,6 +149,10 @@ a {
   margin-top: 1rem;
 }
 
+#about-me-container h3 {
+  text-align: center;
+}
+
 #about-me-container p {
   margin: 0.25rem;
   text-align: center;
@@ -162,11 +166,6 @@ a {
   text-align: center;
 }
 
-#contact-container {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 /* media query small screens */
 
 @media screen and (min-width: 720px) {
@@ -178,10 +177,6 @@ a {
   }
   #top-nav a {
     margin: 0.25rem;
-  }
-  #about-me-container p {
-    margin: 0.5rem;
-    /* text-align: left; */
   }
 }
 
@@ -234,17 +229,32 @@ a {
     justify-content: flex-end;
   }
   #about-me-container {
-    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  #about-me-container h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
   }
   #about-me-container p {
     text-align: left;
+    font-size: 0.8rem;
   }
   #contact-container {
     width: 100%;
     margin-left: 1.2rem;
-    margin-top: 2rem;
   }
   #contact-container p {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #about-me-container h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  #about-me-container p {
+    text-align: left;
+    font-size: 1rem;
   }
 }
