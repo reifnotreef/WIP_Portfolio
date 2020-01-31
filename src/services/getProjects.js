@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 // this is a read only token
-const token = '6201944fcf65c6dbe92d01087533517f194d362d';
+const token = 'ff34c19c069cdfb84151fc4ee9d1806563dc0cf8';
 const query = `query {
     user(login:"reifnotreef") {
     pinnedItems(first: 6, types: [REPOSITORY]) {
