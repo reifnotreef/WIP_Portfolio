@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import HeaderContainer from './Header/HeaderContainer';
 import ProjectsContainer from './Projects/ProjectsContainer';
 import './index.css';
+import Header from './Header/Header';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <HeaderContainer />
+        <Header />
         <ProjectsContainer />
       </div>
     );

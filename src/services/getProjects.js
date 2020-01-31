@@ -1,7 +1,7 @@
-// var { graphql, buildSchema } = require('graphql');
 const fetch = require('node-fetch');
 
-const token = '82c3e4e5b1b0384e852a05f5046f2234974c3f55';
+// this is a read only token
+const token = 'ff90b51259e12ae4cccd945d8f496a99ef0b190f';
 const query = `query {
     user(login:"reifnotreef") {
     pinnedItems(first: 6, types: [REPOSITORY]) {
@@ -9,7 +9,9 @@ const query = `query {
       edges {
         node {
           ... on Repository {
-            name, url, description, id
+            name, description, id, projectsUrl, primaryLanguage {
+              name
+            }
           }
         }
       }
