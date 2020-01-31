@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 // this is a read only token
-const token = 'ff90b51259e12ae4cccd945d8f496a99ef0b190f';
+const token = '569b435ffbf9a7760fbc0cc0948e3fa0be6fd9c6';
 const query = `query {
     user(login: "reifnotreef") {
       bio
